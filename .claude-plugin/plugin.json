@@ -1,0 +1,34 @@
+{
+  "name": "sre",
+  "version": "0.1.0",
+  "description": "SRE tools, standards, and integrations for Claude Code",
+  "author": {
+    "name": "Diego Sierra",
+    "url": "https://github.com/jdiegosierra"
+  },
+  "repository": "https://github.com/jdiegosierra/sre-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "sre",
+    "developer-tools",
+    "pull-requests",
+    "github",
+    "helm"
+  ],
+  "mcpServers": {
+    "github": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    }
+  }
+}

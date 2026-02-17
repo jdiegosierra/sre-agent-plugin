@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "jdiegosierra-sre-agent-plugin",
+  "description": "SRE tools, standards, and integrations for Claude Code",
+  "owner": {
+    "name": "Diego Sierra",
+    "url": "https://github.com/jdiegosierra"
+  },
+  "plugins": [
+    {
+      "name": "sre",
+      "description": "SRE tools, standards, and integrations for Claude Code",
+      "source": {
+        "source": "github",
+        "repo": "jdiegosierra/sre-agent-plugin"
+      },
+      "category": "development",
+      "homepage": "https://github.com/jdiegosierra/sre-agent-plugin"
+    }
+  ]
+}
