@@ -23,7 +23,7 @@ This is a **Claude Code plugin**, not a traditional application. There is no bui
 
 - **Agent** (`sre.md`) is the orchestrator — it invokes commands and skills
 - **Commands** (`lint-fix`, `run-tests`, `update`, `statusline`) are atomic actions
-- **Skills** (`pull-request-standards`, `helm-charts-best-practices`) are reference knowledge the agent uses
+- **Skills** (`pull-request-standards`, `helm-charts-best-practices`, `sre-engineer`, `kubernetes-specialist`, `terraform-engineer`, `cloud-architect`, `monitoring-expert`, `chaos-engineer`, `devops-engineer`, `security-reviewer`, `secure-code-guardian`, `database-optimizer`, `postgres-pro`, `sql-pro`, `code-reviewer`, `test-master`, `microservices-architect`, `architecture-designer`, `debugging-wizard`) are reference knowledge the agent uses
 - **Hooks** run automatically on events (update check, stop notification)
 - **MCPs** are external tool servers started by Claude Code on demand
 - **Scripts** are supporting files used by commands and hooks

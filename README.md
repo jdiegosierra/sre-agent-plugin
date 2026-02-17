@@ -14,6 +14,23 @@ Claude Code plugin with SRE tools, standards, and integrations.
 | Command | `statusline` | Configure the context monitor statusline |
 | Skill | `pull-request-standards` | PR title, description, and branch naming conventions |
 | Skill | `helm-charts-best-practices` | Helm chart architecture, patterns, and best practices |
+| Skill | `sre-engineer` | SLI/SLO management, error budgets, incident management, toil reduction |
+| Skill | `devops-engineer` | CI/CD pipelines, Docker, Kubernetes, deployment strategies |
+| Skill | `kubernetes-specialist` | K8s workloads, Helm, RBAC, networking, service mesh, GitOps |
+| Skill | `terraform-engineer` | Terraform modules, state management, multi-cloud IaC |
+| Skill | `cloud-architect` | AWS/Azure/GCP architecture, migrations, DR, cost optimization |
+| Skill | `monitoring-expert` | Prometheus/Grafana, logging, tracing, alerting, dashboards |
+| Skill | `chaos-engineer` | Chaos experiments, failure injection, game days |
+| Skill | `security-reviewer` | SAST, vulnerability scanning, infrastructure security, compliance |
+| Skill | `secure-code-guardian` | Authentication, OWASP Top 10, encryption, secrets management |
+| Skill | `database-optimizer` | Query optimization, indexing, PostgreSQL/MySQL tuning |
+| Skill | `postgres-pro` | PostgreSQL replication, VACUUM, monitoring, failover |
+| Skill | `sql-pro` | SQL optimization, execution plans, cross-dialect patterns |
+| Skill | `code-reviewer` | PR review methodology, checklists, and feedback patterns |
+| Skill | `test-master` | Testing strategies, frameworks, performance and security testing |
+| Skill | `microservices-architect` | Service mesh, resilience patterns, DDD, event-driven systems |
+| Skill | `architecture-designer` | System design, ADRs, scalability, failure mode planning |
+| Skill | `debugging-wizard` | Root cause analysis, profiling, log analysis, production debugging |
 | Hook | Update check | Notifies on session start if a newer plugin version is available |
 | Hook | Stop notification | Desktop notification when Claude Code finishes a response |
 
@@ -109,10 +126,25 @@ sre-agent-plugin/
 ├── scripts/
 │   └── context-monitor.py             # Statusline context monitor
 ├── skills/
-│   ├── helm-charts-best-practices/
-│   │   └── SKILL.md                   # Helm chart patterns and best practices
-│   └── pull-request-standards/
-│       └── SKILL.md                   # PR standards and conventions
+│   ├── architecture-designer/         # System design, ADRs, scalability
+│   ├── chaos-engineer/                # Chaos experiments, resilience testing
+│   ├── cloud-architect/               # AWS/Azure/GCP architecture, DR, cost
+│   ├── code-reviewer/                 # PR review methodology, checklists
+│   ├── database-optimizer/            # Query optimization, indexing, tuning
+│   ├── debugging-wizard/              # Root cause analysis, profiling, debugging
+│   ├── devops-engineer/               # CI/CD, Docker, K8s, deployment strategies
+│   ├── helm-charts-best-practices/    # Helm chart patterns and best practices
+│   ├── kubernetes-specialist/         # K8s workloads, Helm, RBAC, service mesh
+│   ├── microservices-architect/       # Service mesh, DDD, event-driven systems
+│   ├── monitoring-expert/             # Prometheus/Grafana, logging, tracing
+│   ├── postgres-pro/                  # PostgreSQL replication, VACUUM, failover
+│   ├── pull-request-standards/        # PR standards and conventions
+│   ├── secure-code-guardian/          # Auth, OWASP Top 10, encryption
+│   ├── security-reviewer/             # SAST, vulnerability scanning, compliance
+│   ├── sql-pro/                       # SQL optimization, execution plans
+│   ├── sre-engineer/                  # SLI/SLO, error budgets, incident mgmt
+│   ├── terraform-engineer/            # Terraform modules, state, multi-cloud
+│   └── test-master/                   # Testing strategies, frameworks, QA
 ├── AGENTS.md                          # Claude Code project instructions
 ├── CLAUDE.md -> AGENTS.md             # Symlink for Claude Code
 └── README.md
